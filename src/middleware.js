@@ -120,16 +120,6 @@ export default withAuth(
 // Matcher Config
 export const config = {
   matcher: [
-    /*
-     * Match all request paths except for the ones starting with:
-     * - api (API routes)
-     * - _next/static (static files)
-     * - _next/image (image optimization files)
-     * - all items inside the public folder
-     *    - images (public images)
-     *    - next.svg (Next.js logo)
-     *    - vercel.svg (Vercel logo)
-     */
-    '/((?!api|_next/static|_next/image|favicon.ico|images|next.svg|vercel.svg).*)'
+    '/((?!_next/static|_next/image|favicon.ico|images|next.svg|vercel.svg).*)'
   ]
 }
